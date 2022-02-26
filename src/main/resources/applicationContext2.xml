@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+
+        <bean id="FridgeBean" class="com.dxc.data.IOTDevice1">
+                <constructor-arg value="Fridge"/>
+                <constructor-arg value="Temperature guage for the freezer"/>
+        </bean>
+        <bean name="DishwasherBean" class="com.dxc.data.IOTDevice1">
+                <constructor-arg index="1" type="java.lang.String"  value="Dishwasher"/>
+                <constructor-arg name="device" value="Monitors water flow"/>
+        </bean>
+</beans>

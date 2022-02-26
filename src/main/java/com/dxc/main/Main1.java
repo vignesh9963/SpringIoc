@@ -1,5 +1,6 @@
-package com.dxc;
+package com.dxc.main;
 
+import com.dxc.data.IOTDevice;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
@@ -21,7 +22,7 @@ public class Main1 {
 
         BeanFactory beanFactory=new XmlBeanFactory(resource);
         IOTDevice myDeviceBean=(IOTDevice) beanFactory.getBean("myIOTDeviceBean");
-        System.out.println("XmlBeanFactory(Deprecated)-- "+ myDeviceBean);
+        System.out.println("XmlBeanFactory-- "+ myDeviceBean);
     }
 
 }

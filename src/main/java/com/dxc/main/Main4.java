@@ -1,6 +1,7 @@
-package com.dxc;
+package com.dxc.main;
 
 
+import com.dxc.data.IOTDevice;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

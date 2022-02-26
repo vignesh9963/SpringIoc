@@ -1,10 +1,10 @@
-package com.dxc;
+package com.dxc.data;
 
 
-import org.springframework.core.env.SystemEnvironmentPropertySource;
 import org.springframework.stereotype.Component;
 
-import java.sql.SQLOutput;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 @Component
 public class IOTDevice {
@@ -41,4 +41,15 @@ public class IOTDevice {
                 ", description='" + description + '\'' +
                 '}';
     }
+
+    @PostConstruct
+    public void initBean() throws Exception{
+        System.out.println("IOTDevice has been instantiated. Inside the initBean() method");
+    }
+
+    @PreDestroy
+    public void destroyBean() throws Exception{
+        System.out.println("IOTDevice has been destroyed. Inside the destroyBean() method");
+    }
+
 }

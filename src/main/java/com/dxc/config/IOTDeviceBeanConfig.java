@@ -1,4 +1,4 @@
-package com.dxc;
+package com.dxc.config;
 
 
 import org.springframework.context.annotation.ComponentScan;

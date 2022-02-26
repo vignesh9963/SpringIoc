@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="carBean1" class="com.dxc.auto.Car1" autowire="constructor">
+        <constructor-arg index="0" name="type" value="MPV"/>
+        <constructor-arg index="1" name="model" value="ToyotaInnova"/>
+        <constructor-arg index="2" name="price" value="88000"/>
+        <constructor-arg index="3" name="combinedFuelEconomy" value="16"/>
+    </bean>
+
+        <bean id="engine1" class="com.dxc.auto.Engine1">
+            <constructor-arg name="horsePower" value="335"/>
+            <constructor-arg name="maxRPM" value="40000"/>
+            <constructor-arg name="displacement" value="3.0"/>
+            <constructor-arg name="cylinderConfig" value="I-6"/>
+            <constructor-arg name="recommendedFuel" value="premium unleaded"/>
+        </bean>
+
+
+
+
+</beans>

@@ -1,6 +1,6 @@
-package com.dxc;
+package com.dxc.main;
 
-import org.springframework.beans.factory.support.BeanDefinitionBuilder;
+import com.dxc.data.IOTDevice;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
@@ -18,7 +18,7 @@ public class Main2 {
         XmlBeanDefinitionReader beanReader=new XmlBeanDefinitionReader(beanFactory);
         beanReader.loadBeanDefinitions(resource);
 
-        IOTDevice myDeviceBean=(IOTDevice) ((DefaultListableBeanFactory) beanFactory).getBean("myIOTDeviceBean");
+        IOTDevice myDeviceBean=(IOTDevice) ((DefaultListableBeanFactory) beanFactory).getBean("myIOTDeviceBeanOne");
         System.out.println("Bean From BeanDefinitionRegistry -- "+ myDeviceBean);
 
     }

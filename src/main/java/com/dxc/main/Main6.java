@@ -1,5 +1,7 @@
-package com.dxc;
+package com.dxc.main;
 
+import com.dxc.config.IOTDeviceBeanConfig2;
+import com.dxc.data.IOTDevice;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 //using bean annotation in IOTDeviceBeanConfig2

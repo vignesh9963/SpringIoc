@@ -5,8 +5,11 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-        <bean id="myIOTDeviceBeanOne" class="com.dxc.IOTDevice" />
-        <alias name="myIOTDeviceBean" alias="myBean"/>
+        <bean id="myIOTDeviceBeanOne" class="com.dxc.data.IOTDevice"
+        init-method="initBean" destroy-method="destroyBean"/>
+        <alias name="myIOTDeviceBeanOne" alias="myBean"/>
 
-        <bean name="myIOTDeviceBeanTwo" class="com.dxc.IOTDevice" />
+
+        <bean name="myIOTDeviceBeanTwo" class="com.dxc.data.IOTDevice"
+        init-method="initBean" destroy-method="destroyBean"/>
 </beans>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="carBean" class="com.dxc.auto.Car">
+        <property name="type" value="MPV"/>
+        <property name="model" value="Toyota Innova"/>
+        <property name="price" value="88000"/>
+        <property name="combinedFuelEconomy" value="16"/>
+        <property name="engine" ref="engineBean"/>
+    </bean>
+
+    <bean id="engineBean" class="com.dxc.auto.Engine">
+        <property name="horsePower" value="335"/>
+        <property name="maxRPM" value="40000"/>
+        <property name="displacement" value="3.0"/>
+        <property name="cylinderConfig" value="I-6"/>
+        <property name="recommendedFuel" value="premium unleaded"/>
+    </bean>
+
+
+</beans>
